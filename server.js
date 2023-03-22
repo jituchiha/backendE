@@ -42,7 +42,7 @@ const server = app.listen(port, () => {
 });
 
 app.get('/', (req, res) => {
-    res.setHeader("Access-Control-Allow-Credentials","true);
+   // res.setHeader("Access-Control-Allow-Credentials","true);
     res.sendFile('index.js', {root: '../client/src'})
 });
 
